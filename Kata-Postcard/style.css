@@ -1,0 +1,39 @@
+*,
+*:before,
+*after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  _background-color: rgba(236, 236, 236, 0.842);
+}
+
+.postcard {
+  position: relative;
+  width: 800px;
+  height: 533px;
+  _box-shadow: 5px 5px 5px lightgrey;
+  _border: 0.3px solid lightgray;
+  padding: 50px;
+  background-image: url(https://thumbs.dreamstime.com/b/postal-envelope-design-american-symbols-black-background-american-postal-envelope-127277638.jpg);
+  _background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  _background-position-y: 30%;
+  _background-color: rgba(245, 245, 245, 0.986);
+}
+
+p {
+  _font-family: "Dancing Script", cursive;
+  position: relative;
+  text-align: center;
+  top: 245px;
+}

@@ -1,0 +1,32 @@
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 446px) {
+  html {
+    font-size: 16px;
+  }
+  .main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+  .main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+.grid-main {
+}
