@@ -13,27 +13,80 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  _background-color: rgba(236, 236, 236, 0.842);
 }
 
-.postcard {
+div {
+  border: 2px solid black;
+  width: 300px;
+  height: 400px;
+  margin: 0px auto;
+  padding: 10px 20px;
+  background: #fff;
   position: relative;
-  width: 800px;
-  height: 533px;
-  _box-shadow: 5px 5px 5px lightgrey;
-  _border: 0.3px solid lightgray;
-  padding: 50px;
-  background-image: url(https://thumbs.dreamstime.com/b/postal-envelope-design-american-symbols-black-background-american-postal-envelope-127277638.jpg);
-  _background-size: 90%;
-  background-repeat: no-repeat;
-  background-position: center;
-  _background-position-y: 30%;
-  _background-color: rgba(245, 245, 245, 0.986);
+  border-radius: 3px;
+}
+
+div:after {
+  content: "";
+  background: repeating-linear-gradient(
+    45deg,
+    #114abc,
+    #114abc 10px,
+    #fff 10px,
+    #fff 20px,
+    #bf2010 20px,
+    #bf2010 30px,
+    #fff 30px,
+    #fff 40px
+  );
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 1px 2px 6px 1px rgb(76 66 47 / 75%);
+  width: calc(100% - 24px);
+  height: calc(100% - 24px);
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  z-index: -1;
+}
+
+.div-right {
+  width: 50%;
+  float: left;
+  display: block;
+  position: absolute;
+  align-items: center;
+  top: 200px;
+}
+
+.adress-line {
+  display: block;
+  margin: 10px 20px;
+  font-family: "La Belle Aurore";
+  border-bottom: 1px solid black;
+  position: relative;
+  align-items: center;
+  top: 150px;
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-div {
 }
 
 p {
-  _font-family: "Dancing Script", cursive;
+  font-family: "Dancing Script", cursive;
   position: relative;
   text-align: center;
-  top: 245px;
+  top: 200px;
+}
+
+.beach {
+  color: transparent;
+  background-image: url(https://2.bp.blogspot.com/-znR0c0Az-yI/UAaliAdw2TI/AAAAAAAAFkU/0M1akg2lJHg/s1600/Vector+Beach+Wallpapers.jpg);
+  background-clip: content-box;
+  background-size: cover;
 }
