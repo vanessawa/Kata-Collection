@@ -15,17 +15,26 @@ body {
   align-items: center;
 }
 
+/*macht die sichtbare weiße box im Vordergrund; das eigentliche div.*/
 div {
-  border: 2px solid black;
-  width: 300px;
-  height: 400px;
-  margin: 0px auto;
-  padding: 10px 20px;
+  width: 40vmin;
+  height: 50vmin;
   background: #fff;
   position: relative;
   border-radius: 3px;
+  float: left;
+  display: block;
+  align-items: center;
+  background-image: url(https://images.fineartamerica.com/images-medium-large-5/postal-biplane-us-parcel-post-stamp-science-source.jpg);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: top right;
 }
 
+/*Content:'' erstellt sozusagen eine weitere Box. 
+komplett rot, weiß, blau gestreift. 
+:after macht diese in den Hintergrund des eigentlichen div.
+*/
 div:after {
   content: "";
   background: repeating-linear-gradient(
@@ -50,23 +59,14 @@ div:after {
   z-index: -1;
 }
 
-.div-right {
-  width: 50%;
-  float: left;
-  display: block;
-  position: absolute;
-  align-items: center;
-  top: 200px;
-}
-
 .adress-line {
   display: block;
-  margin: 10px 20px;
+  margin: 1vmin 2vmin;
   font-family: "La Belle Aurore";
   border-bottom: 1px solid black;
   position: relative;
   align-items: center;
-  top: 150px;
+  top: 25vmin;
 }
 
 .grid-section {
@@ -81,12 +81,13 @@ p {
   font-family: "Dancing Script", cursive;
   position: relative;
   text-align: center;
-  top: 200px;
+  top: 30vmin;
 }
 
 .beach {
-  color: transparent;
-  background-image: url(https://2.bp.blogspot.com/-znR0c0Az-yI/UAaliAdw2TI/AAAAAAAAFkU/0M1akg2lJHg/s1600/Vector+Beach+Wallpapers.jpg);
   background-clip: content-box;
-  background-size: cover;
+  background-image: url(https://www.kunstnet.de/w0/12310/gross_strand_.jpg);
+  background-size: 50vmin;
+  background-repeat: no-repeat;
+  background-position: center;
 }
