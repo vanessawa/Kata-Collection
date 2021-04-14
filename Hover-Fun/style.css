@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(97, 133, 143, 0.589);
+  flex-direction: row-reverse;
+}
+
+.box {
+  height: 30vmin;
+  width: 0.5vmax;
+  background-color: rgb(16, 159, 216);
+}
+
+.box:hover,
+.box:hover ~ .box {
+  background-color: purple;
+}
