@@ -1,0 +1,20 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+main {
+  width: 30rem;
+  height: 30rem;
+  border: 5px solid black;
+}
+
+.img-nasa {
+  background-size: contain;
+}
